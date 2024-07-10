@@ -1,0 +1,9 @@
+.page-margin-top-section {
+  opacity: 0;
+  transition: opacity 2s ease-in-out; /* Плавная анимация */
+}
+
+/* Добавляем стили для плавного появления */
+.page-margin-top-section.fade-in {
+  opacity: 1;
+}

@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    --main-color: #03032e;
+    --text-color: #000;
+    --bg-color: #fff;
+}
+
+section {
+    padding: 4rem 0 2rem;
+}
+
+body {
+    color: var(--text-color);
+}
+
+p1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #03032e;
+}
+
+
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%; 
+}
+
+.main-work-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+/*-------------Buttons----------------*/
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-button {
+    padding: 15px 30px;
+    background-color:#727272;
+    color:#fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color:#03032e;
+    color: #fff;
+}
+
+.cars-button{
+    left: 450px;
+    top: 2400px;
+    padding: 10px 12px;
+    margin-top: 30px;
+    color: #03032e;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #03032e;
+    position: absolute;
+}
+
+.cars-button:hover {
+    background-color: #03032e;
+    color: white;
+}
+
+.work-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    width: 800px; /* Ширина кнопки */
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 15px; /* Adjust the value for desired roundness */
+    color: #03032e; /* Adjust the text color */
+    border: none;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    background-color: #d1d1d1;
+}
+
+.button img {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.button span {
+    flex-grow: 1; /* Растягиваем текст на всю доступную ширину */
+}
+
+
+.button:hover {
+    border:3px solid #03032e;
+    border-radius: 15px;
+}
+
+/*-----------------------------------------*/
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-bar {
+    background-color: #03032e;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: -70px;
+}
+
+.info-text {
+    text-align: center;
+}
+
+.info-text i {
+    margin: 0 10px;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 35px;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    padding-right: 400px;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2rem;
+    color:#03032e;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 3px solid transparent; /* Added */
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/*--------------Main Text-------------*/
+.home-text {
+    position: absolute;
+    top: 40%;
+    left: 10%; /* Left margin */
+    transform: translate(0, -50%);
+    color: #ffffff; /* Text color */
+    z-index: 2; /* Set z-index higher than image */
+    width: 30%; /* Text block width */
+}
+
+.home-text h1 {
+    font-size: 36px; /* Header font size */
+    font-weight: bold; /* Bold font */
+    line-height: 1.2; /* Line height */
+}
+
+.main-text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin-top: 50px;
+}
+
+.home-main-text {
+    flex: 1;
+    margin: 80px; 
+    font-size: 20px;
+    color: #000000;
+}
+
+.image-near-main-text {
+    flex-shrink: 0;
+    width: 952px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*--------------Secondary Text-------------*/
+.secondary-text-section{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    
+}
+.secondary-main-text {
+    display: flex;
+    align-items: flex-start; /* Changed to flex-start */
+    
+}
+
+.cars-list-header {
+    position: absolute;
+    margin-left: 250px; 
+    margin-bottom: 350px;
+    font-weight: bold;
+    max-width: 50%;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.list:first-child {
+    margin-left: 200px;
+}
+
+.list li {
+    margin-bottom: 1px;
+    display: inline-block;
+    width: 100%; /* Make elements take up full width */
+    margin: 7px;
+}
+
+.image-near-secondary-text{
+    flex-shrink: 0;
+    width: 951px;
+    height: auto;
+    margin: 0;
+}
+
+.box-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #03032e; /* Text color */
+    text-align: center; /* Center align */
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #03032e; /* Text color */
+    text-align: center; /* Center align */
+}
+
+/* Feature List */
+.features-list {
+    text-align: left;
+    margin-bottom: 40px;
+    color:#03032e;
+}
+
+.features-list img {
+    display: block;
+    margin: 0 auto 10px; /* Center the image */
+}
+
+.features-list h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center align heading */
+}
+
+.features-list p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+/* Columns */
+.column,
+.column-1-3 {
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-top: 40px;
+    margin-bottom: 30px; /* Spacing between columns */
+    width: calc(33.333% - 100px); /* Column width */
+}
+
+/* Style for each column */
+.row-text-under-backgroud {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    height: 100%; /* Ensure the div takes up the full height */
+}
+.column-1-3 {
+    margin-left: 70px;
+    padding: 20px; /* Inner padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(3, 3, 46, 0.5); /* Shadow */
+    background-color: #fff; /* Background color */
+}
+
+.column-1-3:last-child {
+    margin-right: 70px;
+}
+
+/* Arrange columns in a row */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap to the next line if space is insufficient */
+    justify-content: space-between; /* Evenly distribute space between columns */
+}
+/*--work-text--*/
+.offer-for-customer {
+    text-align: center;
+    margin-bottom: 300px;
+}
+.main-work-features h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #03032e;
+
+}
+/*--work page*/
+.offer-for-customer .text-about-work {
+    display: inline-block;
+    max-width: 950px; /* Максимальная ширина контента */
+    text-align: left; /* Выравнивание текста по левому краю */
+    font-size: 22px;
+}
+/*---Vacancies page*/
+.vacancies-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.vacancy {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.vacancy h3 {
+    color: #03032e;
+    margin-bottom: 10px;
+    font-size:28px;
+    font-weight: bold;
+}
+
+.vacancy p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top:20px
+}
+
+.vacancy p2{
+        font-size: 20px;
+        font-weight: bold;      
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #03032e;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #03032e;
+    color: #fff;
+}
+/*Contact page*/
+    .contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+.contact-section p1{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px 80px 0;
+    display: flex;
+}
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info-column {
+    width: 48%; /* Ширина каждой колонки */
+}
+
+.contact-info-item {
+    margin-bottom: 20px;
+}
+
+.contact-info-label {
+    font-weight: bold;
+}
+
+.contact-info-value {
+    margin-top: 5px; /* Отступ между меткой и значением */
+}
+.addres-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+/*------Footer-------*/
+
+footer {
+    background-color: #03032e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.footer-content {
+    max-width: 1068px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/*Tire page*/
+.repair-text-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin-top: 180px;
+}
+
+.image-near-repair-text{
+    flex-shrink: 0;
+    width: 700px;
+    height: auto;
+    margin-right: 20px;
+    padding: 120px;
+}
+
+.repair-main-text{
+    flex: 1;
+    margin: 80px; 
+    font-size: 20px;
+    color: #03032e;
+}
+.repair-main-text h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.repair-main-text h2{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.repair-main-text h3{
+    font-size: 12px;
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+.repair-main-text p {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-text-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .home-main-text,
+    .image-near-main-text {
+        margin: 20px;
+    }
+
+    .secondary-main-text {
+        flex-direction: column;
+    }
+
+    .cars-list-header {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .list:first-child {
+        margin-left: 0;
+    }
+
+    .column,
+    .column-1-3 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .background-image {
+        height: 400px;
+    }
+
+    .button-container {
+        top: 70%;
+    }
+}
+
